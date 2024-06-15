@@ -1,11 +1,11 @@
-20:21:26 [DEBUG] (1) old_mcdonald: Logger initialized.
-20:21:26 [INFO] Running on port: 8086
-20:21:26 [INFO] starting 2 workers
-20:21:26 [INFO] Actix runtime found; starting in Actix runtime
-20:21:26 [TRACE] (1) actix_server::worker: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-server-2.4.0/src/worker.rs:287] starting server worker 0
-20:21:26 [TRACE] (2) mio::poll: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-0.8.11/src/poll.rs:551] registering event source with poller: token=Token(1), interests=READABLE
-20:21:26 [TRACE] (2) actix_server::worker: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-server-2.4.0/src/worker.rs:514] service "actix-web-service-0.0.0.0:8086" is available
-20:21:26 [TRACE] (1) actix_server::worker: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-server-2.4.0/src/worker.rs:287] starting server worker 1
-20:21:26 [TRACE] (3) mio::poll: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-0.8.11/src/poll.rs:551] registering event source with poller: token=Token(1), interests=READABLE
-20:21:26 [TRACE] (3) actix_server::worker: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-server-2.4.0/src/worker.rs:514] service "actix-web-service-0.0.0.0:8086" is available
-20:21:26 [TRACE] (1) mio::poll: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-0.8.11/src/poll.rs:551] registering event source with poller: token=Token(0), interests=READABLE
+20:40:10 [DEBUG] (1) old_mcdonald: Logger initialized.
+20:40:10 [INFO] Running on port: 8086
+20:40:10 [INFO] starting 2 workers
+20:40:10 [INFO] Actix runtime found; starting in Actix runtime
+20:40:10 [TRACE] (1) actix_server::worker: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-server-2.4.0/src/worker.rs:287] starting server worker 0
+20:40:10 [TRACE] (2) mio::poll: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-0.8.11/src/poll.rs:551] registering event source with poller: token=Token(1), interests=READABLE
+20:40:10 [TRACE] (2) actix_server::worker: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-server-2.4.0/src/worker.rs:514] service "actix-web-service-0.0.0.0:8086" is available
+20:40:10 [TRACE] (1) actix_server::worker: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-server-2.4.0/src/worker.rs:287] starting server worker 1
+20:40:10 [TRACE] (3) mio::poll: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-0.8.11/src/poll.rs:551] registering event source with poller: token=Token(1), interests=READABLE
+20:40:10 [TRACE] (3) actix_server::worker: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-server-2.4.0/src/worker.rs:514] service "actix-web-service-0.0.0.0:8086" is available
+20:40:10 [TRACE] (1) mio::poll: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-0.8.11/src/poll.rs:551] registering event source with poller: token=Token(0), interests=READABLE
