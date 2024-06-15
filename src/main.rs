@@ -1,5 +1,4 @@
-//! Scanner Yammer is a project designed to scan cellular signals
-//! and then send the relavent impact to the ``MGTRon`` signal generator based on user input.
+mod weather;
 
 use actix_web::{http::KeepAlive, web, App, HttpServer};
 
