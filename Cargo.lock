@@ -1066,6 +1066,8 @@ dependencies = [
  "log",
  "redis",
  "reqwest",
+ "serde",
+ "serde_json",
  "simplelog",
 ]
 

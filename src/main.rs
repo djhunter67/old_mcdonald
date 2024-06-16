@@ -1,12 +1,14 @@
+mod components;
 mod weather;
 
 use actix_web::{http::KeepAlive, web, App, HttpServer};
-
 use log::{debug, info, warn, LevelFilter};
 
 use redis::Client;
 use simplelog::{ColorChoice, CombinedLogger, Config, TermLogger, TerminalMode, WriteLogger};
 use std::{fs::File, process::exit};
+
+use weather::gov_api::get_weather;
 
 const HOST_IP: &str = "0.0.0.0"; // Local connection of this server
 const PORT: u16 = 8086; // PORT with which to access this server
@@ -39,11 +41,14 @@ async fn main() -> std::io::Result<()> {
 
     info!("Running on port: {PORT}");
 
-    let client = Client::open(REDIS_PATH).unwrap();
+    let redis_client = Client::open(REDIS_PATH).unwrap();
+    let client = reqwest::Client::new();
 
     HttpServer::new(move || {
-        App::new().app_data(web::Data::new(client.clone()))
-        // .service(scan_in_progress)
+        App::new()
+            .app_data(web::Data::new(client.clone()))
+            .app_data(web::Data::new(redis_client.clone()))
+            .service(get_weather)
     })
     .keep_alive(KeepAlive::Os) // Keep the connection alive; OS handled
     .bind((HOST_IP, PORT))
