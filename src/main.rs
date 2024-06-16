@@ -1,4 +1,4 @@
-mod components;
+mod identifier;
 mod weather;
 
 use actix_web::{http::KeepAlive, web, App, HttpServer};
